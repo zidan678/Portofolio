@@ -6,9 +6,9 @@ This repository contains a comprehensive analysis of a dataset sourced from [Kag
 
 The dataset consists of 50,000 entries with 27 features, including:
 
-- `Engine size`: Size of the engine (in liters)
+- `Engine size`: Size of the engine 
 - `Year of manufacture`: Year the car was manufactured
-- `Mileage`: Total distance traveled by the car (in kilometers)
+- `Mileage`: Total distance traveled by the car 
 - `Price`: Selling price of the car
 - `Fuel type`: Type of fuel (Diesel, Hybrid, Petrol)
 - `Model` and `Manufacturer`: Various car models and manufacturers represented as binary columns
