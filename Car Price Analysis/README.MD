@@ -1,8 +1,10 @@
-# Used Car Sales Analysis
+# Used Car Sales Analysis and Prediction
 
-This repository contains an analysis of a dataset sourced from [Kaggle: Mock Dataset of Second Hand Car Sales](https://www.kaggle.com/datasets/msnbehdani/mock-dataset-of-second-hand-car-sales/code). The analysis is conducted in the Jupyter Notebook titled **Analysis of Used Car Prices.ipynb**, which explores a dataset of 50,000 used car sales.
+This repository contains a comprehensive analysis of a dataset sourced from [Kaggle: Mock Dataset of Second Hand Car Sales](https://www.kaggle.com/datasets/msnbehdani/mock-dataset-of-second-hand-car-sales/code) and the application of machine learning techniques to predict used car prices.
 
-## Key Features
+## Dataset Overview
+
+The dataset consists of 50,000 entries with 27 features, including:
 
 - `Engine size`: Size of the engine (in liters)
 - `Year of manufacture`: Year the car was manufactured
@@ -11,38 +13,40 @@ This repository contains an analysis of a dataset sourced from [Kaggle: Mock Dat
 - `Fuel type`: Type of fuel (Diesel, Hybrid, Petrol)
 - `Model` and `Manufacturer`: Various car models and manufacturers represented as binary columns
 
-## Correlation Analysis
+### Correlation Analysis
 
-The correlation matrix reveals significant relationships:
+The correlation matrix reveals significant relationships, such as:
 
 - **Price and Year of Manufacture**: 0.714
 - **Price and Engine Size**: 0.398
 - **Price and Mileage**: -0.633
 
+These insights indicate that newer cars and those with larger engines tend to have higher prices, while higher mileage negatively impacts car prices.
+
 ## Data Visualization
 
-Various visualizations were created to understand the dataset, including:
+Various visualizations were created to understand the dataset better, including histograms, box plots, and scatter plots.
 
-- Histograms
-- Box plots
-- Scatter plots
+## Machine Learning for Price Prediction
 
-## Machine Learning Model
+The repository includes a Python script titled **ml_for_predict_car_prices.py**, which applies several machine learning algorithms to predict used car prices:
 
-Using a Decision Tree model, the following features were identified as important for predicting car prices:
+- **Linear Regression**
+- **Decision Tree**
+- **Random Forest**
+- **Gradient Boosting**
 
-| Feature                  | Importance Score |
-|--------------------------|------------------|
-| Year of manufacture       | 0.623356         |
-| Engine size               | 0.263347         |
-| Mileage                   | 0.033350         |
-| Model_M5                  | 0.022855         |
-| Model_911                 | 0.019586         |
+### Model Performance
+
+The results show that:
+
+- **Linear Regression (RL)**: Performed less satisfactorily in predicting car prices compared to other models.
+- **Decision Tree, Random Forest, and Gradient Boosting**: Yielded better accuracy and more reliable predictions.
 
 ## Conclusion
 
-This analysis provides valuable insights into the factors influencing used car prices, beneficial for buyers, sellers, and manufacturers.
+This repository provides a thorough analysis of used car sales data and demonstrates the application of machine learning techniques for price prediction. While Linear Regression had its limitations, the other models proved to be more effective, offering valuable insights for stakeholders in the automotive market.
 
 ---
 
-Explore the Jupyter notebook for detailed analysis and visualizations.
+Explore the Jupyter notebook and Python script for detailed implementations and further insights into the analysis and prediction of used car prices.
